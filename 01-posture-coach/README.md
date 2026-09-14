@@ -5,7 +5,7 @@
 온라인 강의·과제 중에 흐트러진 자세를 웹캠으로 감지하고, 학습 흐름을 끊지 않는 방식으로 알려주는 Windows 데스크톱 앱입니다.
 
 - 🖥️ **웹 프로토타입:** https://euieuiwon06-glitch.github.io/ra-ai-convergence-design/01-posture-coach/prototype/ (웹캠 권한 필요)
-- 📦 **Windows 실행 파일:** [Releases](https://github.com/euieuiwon06-glitch/ra-ai-convergence-design/releases)의 `자세코치-PostureCoach.exe` (설치 없이 실행, 첫 실행 시 SmartScreen에서 "추가 정보 → 실행")
+- 📦 **Windows 실행 파일:** [Releases](https://github.com/euieuiwon06-glitch/ra-ai-convergence-design/releases/tag/posture-coach-v2)의 `PostureCoach.exe` (설치 없이 실행, 첫 실행 시 SmartScreen에서 "추가 정보 → 실행")
 
 | 항목 | 내용 |
 |---|---|
