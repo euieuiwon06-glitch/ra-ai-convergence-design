@@ -62,7 +62,7 @@
 
 ```
 prototype/          웹앱(index.html · style.css · app.js) + Electron 래퍼(electron/) + 아이콘(build/)
-docs/               기획안 1-10단계 종합 (md · pdf), 6단계 모델 학습·검증 결과
+docs/               기획안 1-10단계 종합 (최종)
 design/             UX/UI 시나리오
 ```
 

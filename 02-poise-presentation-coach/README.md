@@ -47,17 +47,17 @@
 페리윙클 액센트 `#5566FF` · 오로라 마블링 배경 · 프로스티드 글래스 카드 · IBM Plex Sans KR.
 완전한 알약형은 쓰지 않고 정제된 라운드 사각을 썼으며, 모션은 의미 있는 곳(진입, 버튼 누름, 시계방향 카운트다운)에만 넣었습니다.
 
-| 시안 | 확정 |
-|---|---|
-| ![](design/ui-draft/S2%20·%20홈%20·%20대기.png) | ![](design/ui-final/03%20대기.png) |
+| 홈 | 녹화 | 타임라인 |
+|---|---|---|
+| ![](design/ui-final/03%20대기.png) | ![](design/ui-final/05%20Recording.png) | ![](design/ui-final/08%20Report%20Timeline.png) |
 
 ## 폴더
 
 ```
 prototype/      index.html · css/ · js/app.js · js/pose.js · manifest · vercel.json · supabase-setup.sql
-design/         ui-draft (시안 11장) · ui-final (확정 12장)
-docs/           프로젝트 정리 (pdf · html), 기획 총정리, 자료수집·UI 설계 계획, 컨셉 고도화, final-feedback/
-handout/        제작 튜토리얼 (md · pdf), 유인물 PDF
+design/ui-final/ 확정 화면 12장
+docs/           프로젝트 정리 (최종)
+handout/        유인물 PDF
 slides/         강의 슬라이드
 ```
 

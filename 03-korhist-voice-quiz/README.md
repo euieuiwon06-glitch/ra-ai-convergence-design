@@ -59,10 +59,10 @@ TextRank 원본 결과(`textrank_결과.json`)와 보정 후 최종 키워드를
 ```
 prototype/                 index.html · app.js(상태 머신·타이머·채점) · data.js(문항) · clova.js(WAV 녹음) · config.js
 backend/clova-backend/     Supabase Edge Function 소스와 배포 방법
-design/                    화면 UI 13장 + 전체 UI PDF
-data/keyword-extraction/   원문, TextRank 결과, 추출 과정, 근거표(xlsx · pdf), 추출 스크립트
-docs/                      개발 과정 정리, 수업 예제 교재, final-feedback/
-handout/                   제작 튜토리얼 (md · pdf), 유인물 docx
+design/                    화면 UI
+data/keyword-extraction/   원문, TextRank 결과, 추출 과정, 근거표(xlsx), 추출 스크립트
+docs/                      개발 과정 정리
+handout/                   유인물 docx
 slides/                    강의 슬라이드
 ```
 

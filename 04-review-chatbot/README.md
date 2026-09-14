@@ -58,9 +58,9 @@ Google Places AI 요약이나 야놀자 리뷰 같은 기존 서비스는 대부
 prototype/      React + Vite 소스 (src/data/qa.js 매칭 로직 · reviews.js 리뷰 데이터)
 demo/           GitHub Pages용 빌드 결과
 backend/        FastAPI: /chat · /reviews · /reviews/analyze, 3-LLM 다수결·분절·신뢰도, pytest
-data/           리뷰 분류표(레이블링), 모델별 카테고리·톤 교차검증표(xlsx · pdf), 기준값 비율표, 추가 기능 판단 지침
-docs/           진행 과정 정리, final-feedback/
-handout/        제작 튜토리얼 (md · pdf), 유인물 docx
+data/           리뷰 분류표(레이블링), 모델별 카테고리·톤 교차검증표(xlsx), 기준값 비율표, 추가 기능 판단 지침
+docs/           진행 과정 정리
+handout/        유인물 docx
 slides/         강의 슬라이드
 ```
 
