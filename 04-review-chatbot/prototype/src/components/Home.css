@@ -1,0 +1,130 @@
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home__header {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 64px 24px 40px;
+}
+
+.home__top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home__greeting {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.home__title {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -0.6px;
+}
+
+.home__segment {
+  display: flex;
+  gap: 6px;
+  padding: 0 24px;
+}
+
+.home__seg-chip {
+  border: none;
+  cursor: pointer;
+  padding: 9px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  background: var(--color-card);
+  color: var(--color-text-secondary);
+}
+
+.home__seg-chip.is-active {
+  background: var(--color-mint);
+  color: var(--color-mint-text);
+}
+
+.home__list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 24px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.home__list::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.home__tip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--color-card-pos);
+}
+
+.home__tip p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.home__examples {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home__examples-label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--color-text-secondary);
+}
+
+.home__example-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home__example-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: none;
+  background: var(--color-card);
+  cursor: pointer;
+  text-align: left;
+}
+
+.home__example-row span {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.home__example-row:hover {
+  background: #262832;
+}

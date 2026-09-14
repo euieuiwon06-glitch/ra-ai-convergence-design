@@ -1,0 +1,166 @@
+.add-review {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.add-review::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.add-review__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-review__textarea {
+  width: 100%;
+  min-height: 140px;
+  resize: none;
+  border: none;
+  border-radius: 14px;
+  background: var(--color-card);
+  color: var(--color-text-primary);
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 14px 16px;
+  outline: none;
+}
+
+.add-review__textarea::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.add-review__error {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-orange);
+}
+
+.add-review__submit {
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+  padding: 11px 20px;
+  border-radius: 20px;
+  background: var(--color-mint);
+  color: var(--color-mint-text);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.add-review__result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--color-card);
+}
+
+.add-review__result-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.add-review__badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.add-review__badge--pos {
+  background: var(--color-card-pos);
+  color: var(--color-mint);
+}
+
+.add-review__badge--neg {
+  background: var(--color-card-neg);
+  color: var(--color-orange);
+}
+
+.add-review__badge--pending {
+  background: var(--color-pending-bg);
+  color: var(--color-pending);
+}
+
+.add-review__badge--neutral {
+  background: #2a2a33;
+  color: var(--color-text-secondary);
+}
+
+.add-review__confidence-pct {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.confidence-bar__track {
+  height: 8px;
+  border-radius: 4px;
+  background: #17171c;
+  overflow: hidden;
+}
+
+.confidence-bar__fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.2s ease;
+}
+
+.confidence-bar__fill--pos {
+  background: var(--color-mint);
+}
+
+.confidence-bar__fill--neg {
+  /* 부정은 경고색(orange)이 아니라 톤다운된 회색으로 — 이분법 뱃지가 아니라 확률 바라서 */
+  background: #6b6b76;
+}
+
+.confidence-bar__fill--pending {
+  background: var(--color-pending);
+}
+
+.confidence-bar__fill--neutral {
+  background: #6b6b76;
+}
+
+.add-review__confidence-detail {
+  margin: 0;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.add-review__tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  background: #1f2128;
+  color: var(--color-text-secondary);
+}
+
+.add-review__content {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.add-review__message {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}

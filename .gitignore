@@ -1,0 +1,12 @@
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.pytest_cache/
+*.db
+release/
+.vercel/
+.DS_Store
+Thumbs.db

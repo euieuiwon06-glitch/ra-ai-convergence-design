@@ -1,0 +1,11 @@
+.phone {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  overflow: hidden;
+  border-radius: 40px;
+  background:
+    linear-gradient(180deg, rgba(63, 165, 122, 0) 0%, rgba(63, 165, 122, 0.06) 75%, rgba(63, 165, 122, 0.25) 100%),
+    linear-gradient(90deg, #17171c 0%, #17171c 100%);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 0 8px #050506;
+}

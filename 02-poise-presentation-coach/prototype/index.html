@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<title>Poise — 발표 습관 코치</title>
+<meta name="theme-color" content="#5566FF" />
+<meta name="description" content="발표 습관을 다듬는 AI 실시간 자세 코치" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="./icons/icon.svg" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Poise" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+<main id="app">
+<div id="aurora" aria-hidden="true"></div>
+
+  <!-- 01 SPLASH -->
+  <section class="screen is-active" data-screen="splash">
+    <div class="splash">
+      <div class="splash__logo">
+        <svg viewBox="0 0 96 96" width="96" height="96"><rect width="96" height="96" rx="26" fill="url(#lg)"/>
+          <rect x="28" y="52" width="14" height="30" rx="5" fill="#7FD3E6"/>
+          <rect x="44" y="42" width="14" height="40" rx="5" fill="#5566FF"/>
+          <rect x="60" y="30" width="14" height="52" rx="5" fill="#3A45C4"/>
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#EEF0FF" stop-opacity=".7"/></linearGradient></defs>
+        </svg>
+      </div>
+      <h1 class="splash__word">Poise</h1>
+      <p class="splash__tag">발표 습관을 다듬는 AI 연습 코치</p>
+      <div class="splash__bar"><span></span></div>
+    </div>
+  </section>
+
+  <!-- 02 ONBOARDING -->
+  <section class="screen" data-screen="onboarding">
+    <div class="content">
+      <div class="statusbar"><span class="sb-time">9:41</span><span class="sb-batt"></span></div>
+      <div class="onb-gap"></div>
+      <div class="onb-card glass">
+        <div class="onb-illust">
+          <div class="onb-phone"><span></span></div>
+          <div class="onb-dist"><i></i><b>1m</b><i></i></div>
+          <div class="onb-person">
+            <svg viewBox="0 0 100 118" width="96" height="113" aria-hidden="true">
+              <circle cx="50" cy="25" r="19"/>
+              <path d="M12 118 C12 88 28 67 50 67 C72 67 88 88 88 118 Z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <h2 class="h1">폰을 세로로 세우고<br>1m 거리에서 촬영하세요</h2>
+      <p class="sub">눈높이나 약간 아래에 두면 상체가 화면에 잘 담겨 습관을 정확히 분석할 수 있어요.</p>
+      <div class="spacer"></div>
+      <button class="btn btn--primary" data-go="home">시작하기</button>
+    </div>
+  </section>
+
+  <!-- 03 HOME -->
+  <section class="screen" data-screen="home">
+    <div class="content">
+      <div class="statusbar"><span class="sb-time">9:41</span><span class="sb-batt"></span></div>
+      <header class="home-head">
+        <div class="home-greet">
+          <p class="sub">안녕하세요, 원의님</p>
+          <h2 class="h1">오늘도 발표 연습해볼까요?</h2>
+        </div>
+        <div class="home-icons">
+          <button class="iconbtn glass" data-go="calendar" title="기록">
+            <svg viewBox="0 0 40 40" width="20" height="20"><g fill="none" stroke="#3A45C4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="13" width="16" height="15"/><path d="M12 18h16M17 11v4M23 11v4"/></g><circle cx="20" cy="23" r="1.8" fill="#5566FF"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="cam-card ai-frame">
+        <span class="cam-label"><i class="livedot"></i>AI 비전 · 실시간 프레이밍</span>
+        <span class="br br-tl"></span><span class="br br-tr"></span><span class="br br-bl"></span><span class="br br-br"></span>
+        <div class="cam-silhouette"><span class="reticle"></span><span class="sil-head"></span><span class="sil-body"></span></div>
+        <span class="cam-hint">얼굴과 상체가 모두 보이게 맞춰주세요</span>
+      </div>
+
+      <button class="glass session-card" data-go="report" id="homeLastSession">
+        <div class="row-between"><span class="card-title">직전 세션 리포트</span><span class="chev">›</span></div>
+        <div class="row-between" style="align-items:flex-end">
+          <div class="num-row"><b class="num-grad" id="homeCount">12</b><span class="unit">회 감지</span></div>
+          <span class="chip chip--good" id="homeDelta">지난 회차보다 4 ↓</span>
+        </div>
+        <p class="micro" id="homeMeta">8월 8일 오후 3:40 · 3분 12초 연습</p>
+      </button>
+
+      <div class="spacer"></div>
+      <button class="btn btn--primary" data-go="countdown">연습 시작하기</button>
+    </div>
+  </section>
+
+  <!-- 04 COUNTDOWN -->
+  <section class="screen screen--camera" data-screen="countdown">
+    <button class="cam-close" data-go="home" aria-label="닫기">✕</button>
+    <div class="cd-wrap">
+      <p class="cd-caption">3초 후 자동으로 시작돼요</p>
+      <div class="cd-ring">
+        <svg class="cd-spin" viewBox="0 0 240 240" width="240" height="240">
+          <circle cx="120" cy="120" r="104" fill="none" stroke="rgba(255,255,255,.13)" stroke-width="16"/>
+          <circle cx="120" cy="120" r="104" fill="none" stroke="url(#cdg)" stroke-width="16" stroke-linecap="round" stroke-dasharray="490 163" transform="rotate(-90 120 120)"/>
+          <circle cx="16" cy="120" r="9" fill="#fff"/>
+          <defs><linearGradient id="cdg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6E7BFF"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs>
+        </svg>
+        <div class="cd-num" id="cdNum">3</div>
+      </div>
+      <div class="cd-pose glass-dark"><b>자세를 잡아주세요</b><span>정면을 바라보고 상체를 곧게 펴주세요</span></div>
+    </div>
+  </section>
+
+  <!-- 05 RECORDING (녹화 + 실시간 자세 감지 통합) -->
+  <section class="screen screen--camera" data-screen="recording">
+    <video id="recCam" class="cam-video" autoplay muted playsinline></video>
+    <canvas id="recOverlay" class="cam-overlay"></canvas>
+    <div id="alertTint" class="alert-tint"></div>
+    <div class="prac-frame"><span class="br br-tl"></span><span class="br br-tr"></span><span class="br br-bl"></span><span class="br br-br"></span></div>
+
+    <div class="rec-top">
+      <div class="rec-pill glass-dark"><i class="rec-dot"></i><span id="recTime">00:00</span></div>
+    </div>
+
+    <div id="warnBanner" class="warn-banner" hidden>
+      <div class="warn-ic">
+        <svg viewBox="0 0 30 30" width="26" height="26"><path d="M15 3 L28 26 L2 26 Z" fill="#FFB020"/><rect x="13.7" y="11" width="2.6" height="8" rx="1.3" fill="#2A1B02"/><circle cx="15" cy="22.4" r="1.4" fill="#2A1B02"/></svg>
+      </div>
+      <div class="warn-txt"><b id="warnTitle">고개가 기울었어요</b><span id="warnSub">어깨와 수평을 맞춰 정면을 봐주세요</span></div>
+    </div>
+
+    <div class="rec-observe glass-dark"><i class="obs-dot"></i><span>AI가 자세를 관찰하고 있어요</span></div>
+
+    <div class="rec-bottom">
+      <button class="rec-stop" id="recStop" aria-label="길게 눌러 종료">
+        <svg class="rec-ring" viewBox="0 0 72 72" width="72" height="72">
+          <circle cx="36" cy="36" r="33" fill="none" stroke="rgba(255,255,255,.16)" stroke-width="3"/>
+          <circle id="recStopArc" cx="36" cy="36" r="33" fill="none" stroke="url(#rsg)" stroke-width="3" stroke-linecap="round" stroke-dasharray="207.3" stroke-dashoffset="207.3" transform="rotate(-90 36 36)"/>
+          <defs><linearGradient id="rsg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF6B6B"/><stop offset="1" stop-color="#FF9838"/></linearGradient></defs>
+        </svg>
+        <span class="rec-square"></span>
+      </button>
+      <span class="rec-stop-label">길게 눌러 종료</span>
+    </div>
+    <div id="recModelHint" class="model-hint"></div>
+  </section>
+
+  <!-- 06 ANALYZING -->
+  <section class="screen" data-screen="analyzing">
+    <div class="content content--center">
+      <div class="statusbar"><span class="sb-time">9:41</span><span class="sb-batt"></span></div>
+      <div class="spacer"></div>
+      <div class="ana-num num-grad" id="anaPct">0%</div>
+      <div class="ana-bar"><span id="anaFill"></span></div>
+      <h2 class="h1" style="text-align:center">발표를 분석하고 있어요</h2>
+      <p class="sub" style="text-align:center">영상에서 5가지 습관 신호를 집계하는 중이에요</p>
+      <div class="ana-list" id="anaList"></div>
+      <div class="spacer"></div>
+      <p class="micro" style="text-align:center">잠시만 기다려 주세요. 보통 10초 이내예요</p>
+    </div>
+  </section>
+
+  <!-- 07 REPORT -->
+  <section class="screen" data-screen="report">
+    <div class="content">
+      <div class="statusbar"><span class="sb-time">9:41</span><span class="sb-batt"></span></div>
+      <header class="topbar"><button class="backbtn" data-back>‹</button><h3>세션 리포트</h3><span class="topbar__sp"></span></header>
+      <!-- 1) 영상 피드백: 녹화 다시보기 -->
+      <p class="sub">녹화한 발표를 다시 보며 어느 구간이 문제였는지 확인해보세요.</p>
+      <div class="glass card replay-card">
+        <div class="row-between"><span class="card-title">녹화 다시보기</span><span class="micro tnum" id="rpTime">0:00 / 3:40</span></div>
+        <div class="rp-stage" id="rpStage">
+          <video id="rpVideo" class="rp-video" playsinline muted hidden></video>
+          <div class="rp-sil" id="rpSil"><span class="rp-head"></span><span class="rp-body"></span></div>
+          <span class="rp-badge" id="rpBadge" hidden><i></i><b></b></span>
+          <button class="rp-play" id="rpPlay" aria-label="재생/일시정지"><span class="rp-tri"></span></button>
+        </div>
+        <div class="rp-scrub" id="rpScrub">
+          <span class="rp-fill" id="rpFill"></span>
+          <span class="rp-marks" id="rpMarks"></span>
+          <span class="rp-head-dot" id="rpHead"></span>
+        </div>
+        <p class="micro">색 표시 지점이 습관이 감지된 순간이에요. 스크럽바나 아래 타임라인을 눌러 그 부분으로 이동해요.</p>
+      </div>
+      <div class="glass card">
+        <div class="row-between"><span class="card-title">구간 타임라인</span><span class="micro" id="tlDur">총 3분 40초</span></div>
+        <div class="tl-graph" id="tlGraph"></div>
+        <div class="tl-axis"><span>0:00</span><span id="tlMid">1:50</span><span id="tlEnd">3:40</span></div>
+        <div class="tl-tracks" id="tlTracks"></div>
+      </div>
+
+      <!-- 2) 이번 세션 분석 -->
+      <div class="rep-sec"><span class="rep-sec-t">이번 세션 분석</span></div>
+      <div class="glass card">
+        <div class="row-between"><span class="card-title">습관 신호 분포</span><span class="micro" id="repMeta">8월 10일 · 3분 40초</span></div>
+        <div class="donut-row">
+          <div class="donut" id="repDonut"></div>
+          <div class="legend" id="repLegend"></div>
+        </div>
+        <p class="body" id="repComment">시선 회피가 가장 잦았어요. 청중을 천천히 둘러보는 연습을 해봐요.</p>
+      </div>
+      <p class="micro footnote">발화 멈춤은 2초 이상 말이 끊긴 구간만 집계해요</p>
+      <div class="glass card" id="deltaCard">
+        <span class="card-title">이번 회차에서 달라진 점</span>
+        <div id="deltaRows"></div>
+        <p class="body accent" style="margin:0">시선 회피가 잦았던 구간을 다시 연습해볼까요?</p>
+      </div>
+
+      <!-- 3) 전체 통계 -->
+      <div class="rep-sec"><span class="rep-sec-t">전체 연습 통계</span><span class="micro">회차별 흐름</span></div>
+      <div class="stat-tiles" id="statTiles"></div>
+      <div class="glass card">
+        <div class="row-between"><span class="card-title">회차별 신호 추이</span><span class="micro">최근 6회</span></div>
+        <div class="bar-chart" id="barChart"></div>
+      </div>
+      <div class="glass card">
+        <span class="card-title">가장 잦은 습관</span>
+        <div class="row-between" style="align-items:center;margin-top:4px">
+          <span class="top-habit"><i id="topDot"></i><b id="topName">시선 회피</b></span>
+          <span class="accent bold" id="topPct">전체의 38%</span>
+        </div>
+        <div class="stack-bar" id="stackBar"></div>
+        <p class="body" id="topTip">시선을 천천히 옮기는 연습이 도움돼요. 청중을 3~4구역으로 나눠 바라보세요.</p>
+      </div>
+
+      <div class="spacer"></div>
+      <div class="btn-row">
+        <button class="btn btn--ghost" data-go="countdown">다시 연습</button>
+        <button class="btn btn--primary" data-go="list">기록 보기</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 CALENDAR / 09 LIST share the 기록 shell -->
+  <section class="screen" data-screen="calendar">
+    <div class="content">
+      <div class="statusbar"><span class="sb-time">9:41</span><span class="sb-batt"></span></div>
+      <header class="topbar"><button class="backbtn" data-back>‹</button><h3>캘린더</h3>
+        <button class="iconbtn iconbtn--sm glass" data-go="list" title="최근 항목"><svg viewBox="0 0 34 34" width="18" height="18"><g stroke="#3A45C4" stroke-width="2" stroke-linecap="round"><line x1="11" y1="12" x2="23" y2="12"/><line x1="11" y1="17" x2="23" y2="17"/><line x1="11" y1="22" x2="19" y2="22"/></g></svg></button>
+      </header>
+      <div class="glass card">
+        <div class="cal-nav"><button class="chevbtn">‹</button><b id="calMonth">2026. 8</b><button class="chevbtn">›</button></div>
+        <div class="cal-weekdays"><span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span></div>
+        <div class="cal-grid" id="calGrid"></div>
+      </div>
+      <div class="spacer"></div>
+      <button class="glass day-card" id="calDayCard" data-go="report"></button>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="list">
+    <div class="content">
+      <div class="statusbar"><span class="sb-time">9:41</span><span class="sb-batt"></span></div>
+      <header class="topbar topbar--rec"><button class="backbtn" data-back>‹</button><h3>기록</h3>
+        <div class="topbar-icons">
+          <button class="iconbtn iconbtn--sm glass" data-go="calendar" title="캘린더"><svg viewBox="0 0 34 34" width="18" height="18"><g fill="none" stroke="#3A45C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="11" width="14" height="13"/><path d="M10 15h14M14.5 9v3.5M19.5 9v3.5"/></g></svg></button>
+          <button class="iconbtn iconbtn--sm glass" data-go="home" title="홈"><svg viewBox="0 0 34 34" width="18" height="18"><g fill="none" stroke="#3A45C4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16.5 17 10l7 6.5"/><path d="M11.5 15.5V24h11v-8.5"/></g></svg></button>
+        </div>
+      </header>
+      <div class="list-wrap" id="listWrap"></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.20.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection@2.1.3/dist/pose-detection.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./js/pose.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

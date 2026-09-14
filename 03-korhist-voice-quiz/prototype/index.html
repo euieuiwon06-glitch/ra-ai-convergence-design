@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>소리 내어 외우는 한국사 · 프로토타입</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="device">
+
+    <!-- 0 · 스플래시 -->
+    <section id="screen-splash" class="screen active">
+      <div class="splash-logo" aria-label="마이크">
+        <svg width="54" height="54" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="9" y="2.5" width="6" height="11.5" rx="3" fill="#ffffff"/>
+          <path d="M5.5 11a6.5 6.5 0 0 0 13 0" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="17.5" x2="12" y2="21" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          <line x1="8" y1="21" x2="16" y2="21" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h1 class="splash-title">소리 내어<br />외우는 한국사</h1>
+      <p class="splash-sub">말하기로 암기하는 한국사</p>
+      <div class="dots"><span></span><span></span><span></span></div>
+      <p class="splash-foot">AI 융합디자인 실습</p>
+    </section>
+
+    <!-- 1 · 홈 -->
+    <section id="screen-home" class="screen">
+      <span class="badge">AI 융합디자인 실습</span>
+      <h1 class="h-title">소리 내어<br />외우는 한국사</h1>
+      <p class="h-sub">눈으로 읽지 말고, 입으로 답하세요.</p>
+
+      <div class="feature">
+        <div class="feature-head">
+          <div class="feature-ic">🎙</div>
+          <div>
+            <h3>말하기로 암기</h3>
+            <p>발화·생성 효과 기반 학습</p>
+          </div>
+        </div>
+        <p class="feature-desc">직접 소리 내어 답을 꺼내면, 눈으로 읽을 때보다 기억이 더 오래 남아요.</p>
+        <div class="feature-pills"><span>음성 응답</span><span>핵심어 채점</span><span>즉시 피드백</span></div>
+      </div>
+
+      <h2 class="section-title">이렇게 진행돼요</h2>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>사건이 잠깐 나타났다 사라져요</p></div>
+        <div class="step"><span class="step-num">2</span><p>기억나는 내용을 소리 내어 말해요</p></div>
+        <div class="step"><span class="step-num">3</span><p>핵심어를 맞췄는지 바로 확인해요</p></div>
+      </div>
+
+      <div class="spacer"></div>
+      <button class="btn" id="btn-home-start">시작하기 &nbsp;→</button>
+      <p class="home-foot">🎙 시작하면 마이크 권한을 허용해 주세요</p>
+    </section>
+
+    <!-- 2 · 단원 선택 -->
+    <section id="screen-unit" class="screen">
+      <button class="top-back" data-nav="home">←</button>
+      <h1 class="page-title">단원 선택</h1>
+      <p class="page-sub">암기하고 싶은 단원을 골라주세요</p>
+      <div class="unit-list">
+        <div class="unit locked"><div class="unit-ic">🔒</div><div class="unit-body"><h4>고대 국가</h4><p>삼국 · 통일신라 · 발해</p></div><span class="unit-tag">준비 중</span></div>
+        <div class="unit locked"><div class="unit-ic">🔒</div><div class="unit-body"><h4>고려</h4><p>후삼국 통일 ~ 무신정권</p></div><span class="unit-tag">준비 중</span></div>
+        <div class="unit locked"><div class="unit-ic">🔒</div><div class="unit-body"><h4>조선</h4><p>건국 · 통치체제 · 사림</p></div><span class="unit-tag">준비 중</span></div>
+        <div class="unit active" id="unit-open"><div class="unit-ic">📖</div><div class="unit-body"><h4>개항기 · 근대</h4><p>강화도 조약 ~ 을사늑약</p></div><span class="unit-tag">5문항</span></div>
+        <div class="unit locked"><div class="unit-ic">🔒</div><div class="unit-body"><h4>일제강점기</h4><p>국권 피탈 ~ 광복</p></div><span class="unit-tag">준비 중</span></div>
+        <div class="unit locked"><div class="unit-ic">🔒</div><div class="unit-body"><h4>현대</h4><p>대한민국 정부 수립 ~</p></div><span class="unit-tag">준비 중</span></div>
+      </div>
+      <div class="spacer"></div>
+      <button class="btn" id="btn-unit-start">개항기 · 근대 시작하기 &nbsp;→</button>
+    </section>
+
+    <!-- 3 · 카드 노출 -->
+    <section id="screen-card" class="screen">
+      <div class="q-head">
+        <div class="q-head-row"><span class="unit-name">개항기</span><span class="q-index" id="card-index">1 / 5</span></div>
+        <div class="segbar" id="card-segbar"></div>
+      </div>
+      <div class="card-wrap">
+        <div class="event-card" id="event-card">
+          <p class="eyebrow">이 사건을 설명하세요</p>
+          <h2 class="event-name" id="event-name">강화도 조약</h2>
+          <p class="event-hint">연도 · 계기 · 핵심 내용을 소리 내어 말해보세요</p>
+        </div>
+        <div class="timer">
+          <div class="timer-track"><div class="timer-fill" id="card-timer-fill"></div></div>
+          <p class="timer-label">3초 후 카드가 사라집니다</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · 듣는 중 -->
+    <section id="screen-listen" class="screen">
+      <div class="q-head">
+        <div class="q-head-row"><span class="unit-name">개항기</span><span class="q-index" id="listen-index">1 / 5</span></div>
+        <div class="segbar" id="listen-segbar"></div>
+      </div>
+      <div class="listen-status"><span class="dot"></span><span id="listen-status-text">듣는 중</span></div>
+
+      <div class="listen-stage">
+        <div class="wave" id="wave"></div>
+        <button class="mic-btn rec" id="mic-btn" aria-label="마이크">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="9" y="2.5" width="6" height="11.5" rx="3" fill="#ffffff"/>
+            <path d="M5.5 11a6.5 6.5 0 0 0 13 0" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+            <line x1="12" y1="17.5" x2="12" y2="21" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+            <line x1="8" y1="21" x2="16" y2="21" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <p class="listen-foot">말을 마치고 2초 멈추면 자동으로 채점돼요</p>
+
+      <div class="recog" id="recog">
+        <p class="label">실시간 인식</p>
+        <p class="text empty" id="recog-text">말을 시작하면 여기에 표시돼요…</p>
+      </div>
+
+      <div class="kb-fallback" id="kb-fallback">
+        <textarea id="kb-input" placeholder="답을 입력해 주세요 (예: 강화도 조약은 1876년 운요호 사건으로…)"></textarea>
+        <button class="btn" id="kb-submit" style="margin-top:12px">채점하기</button>
+      </div>
+
+      <button class="kb-toggle" id="kb-toggle">⌨️ 키보드로 답하기</button>
+    </section>
+
+    <!-- 5 · 피드백 (동적 렌더) -->
+    <section id="screen-feedback" class="screen fb">
+      <div class="fb-emblem" id="fb-emblem">✓</div>
+      <h2 class="fb-title" id="fb-title">완전 정답!</h2>
+      <p class="fb-sub" id="fb-sub">핵심어를 모두 말했어요</p>
+      <div class="spacer"></div>
+      <div class="answer-card" id="fb-answer-card"><!-- JS 렌더 --></div>
+      <div class="doc-btns">
+        <button class="doc-btn" data-doc="explain">📖 해설 보기</button>
+        <button class="doc-btn" data-doc="source">📄 원문 보기</button>
+      </div>
+      <button class="btn" id="btn-next">다음 문제 &nbsp;→</button>
+    </section>
+
+    <!-- 9 · 결과 요약 -->
+    <section id="screen-result" class="screen">
+      <h1 class="page-title" style="margin-top:10px">학습 완료</h1>
+      <p class="page-sub" id="result-sub">개항기 · 5문항</p>
+      <div class="result-hero">
+        <div>
+          <p class="label">통과한 문제</p>
+          <p class="big"><span id="result-pass">0</span><small> / 5</small></p>
+        </div>
+        <div class="emoji">🎉</div>
+      </div>
+      <div class="stat-row">
+        <div class="stat green"><div class="n" id="stat-complete">0</div><div class="k">완전정답</div></div>
+        <div class="stat green"><div class="n" id="stat-pass">0</div><div class="k">통과</div></div>
+        <div class="stat orange"><div class="n" id="stat-partial">0</div><div class="k">부분정답</div></div>
+        <div class="stat gray"><div class="n" id="stat-unknown">0</div><div class="k">모름</div></div>
+      </div>
+      <div class="result-list" id="result-list"><!-- JS 렌더 --></div>
+      <div class="spacer"></div>
+      <button class="stats-link" id="result-stats-link">📊 전체 통계 보기</button>
+      <div class="result-actions">
+        <button class="btn secondary" data-nav="home">홈으로</button>
+        <button class="btn" id="btn-retry">다시 풀기</button>
+      </div>
+    </section>
+
+    <!-- 13-a · 학습 통계 -->
+    <section id="screen-stats" class="screen">
+      <button class="top-back" id="stats-back">←</button>
+      <h1 class="page-title" style="margin-top:16px">학습 통계</h1>
+      <p class="page-sub">지금까지의 학습 현황이에요</p>
+
+      <div class="stats-summary">
+        <div class="stat-card2">
+          <div class="ic ic-blue">📚</div>
+          <div class="num blue"><span id="st-count">0</span><i>회</i></div>
+          <div class="lbl">총 학습 횟수</div>
+        </div>
+        <div class="stat-card2">
+          <div class="ic ic-green">🎯</div>
+          <div class="num green"><span id="st-rate">0</span><i>%</i></div>
+          <div class="lbl">누적 정답률</div>
+        </div>
+        <div class="stat-card2">
+          <div class="ic ic-orange">🔥</div>
+          <div class="num orange"><span id="st-streak">0</span><i>일</i></div>
+          <div class="lbl">연속 학습</div>
+        </div>
+      </div>
+
+      <div class="trend-card">
+        <div class="card-head"><h3>정답률 추이</h3><span class="muted-sm" id="trend-range">최근 7회</span></div>
+        <p class="caption">회차별 통과 문항 수 (5문항 중)</p>
+        <div class="bars" id="trend-bars"><!-- JS 렌더 --></div>
+      </div>
+
+      <div class="kw-card">
+        <div class="card-head"><h3>자주 놓치는 핵심어</h3><span class="top3">TOP 3</span></div>
+        <div id="kw-list"><!-- JS 렌더 --></div>
+        <p class="kw-hint" id="kw-hint">가장 많이 놓친 핵심어부터 복습해 보세요</p>
+      </div>
+    </section>
+
+    <!-- 10/11 · 팝업 (해설 / 원문) -->
+    <div class="sheet-overlay" id="sheet-overlay">
+      <div class="sheet" id="sheet"><!-- JS 렌더 --></div>
+    </div>
+
+  </div>
+
+  <script src="config.js"></script>
+  <script src="clova.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

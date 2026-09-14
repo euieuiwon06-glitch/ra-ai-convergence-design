@@ -1,0 +1,49 @@
+:root {
+  --color-bg: #17171c;
+  --color-card: #1f2128;
+  --color-card-pos: #293d34;
+  --color-card-neg: #472921;
+  --color-mint: #3fa57a;
+  --color-mint-text: #17171c;
+  --color-orange: #ff7759;
+  --color-pending: #e0a53f;
+  --color-pending-bg: #3d3320;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #93939f;
+  --color-text-muted: #73737d;
+  --color-border: #383840;
+
+  --font-kr: 'Noto Sans KR', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0b0b0e;
+  color: var(--color-text-primary);
+  font-family: var(--font-kr);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

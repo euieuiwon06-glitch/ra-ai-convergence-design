@@ -1,0 +1,38 @@
+{
+  "name": "posture-coach-desktop",
+  "version": "1.0.0",
+  "description": "자세 코치 · Posture Coach — Electron desktop wrapper",
+  "author": "정원의",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "icon": "node build/make-icon.js",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^26.15.3",
+    "png-to-ico": "^3.0.2",
+    "sharp": "^0.35.3"
+  },
+  "build": {
+    "appId": "com.postureCoach.desktop",
+    "productName": "자세 코치",
+    "files": [
+      "index.html",
+      "style.css",
+      "app.js",
+      "electron/**/*"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico"
+    },
+    "portable": {
+      "artifactName": "자세코치-PostureCoach.exe"
+    },
+    "directories": {
+      "output": "release"
+    }
+  }
+}

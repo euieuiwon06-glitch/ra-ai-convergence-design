@@ -1,0 +1,26 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b84ea"/>
+      <stop offset="1" stop-color="#0058ad"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1024" height="1024" rx="224" fill="url(#bg)"/>
+
+  <!-- posture glyph: upright head + spine, simple + legible at 16px -->
+  <circle cx="512" cy="336" r="118" fill="#ffffff"/>
+  <path d="M512 486
+           C 380 486, 320 590, 320 706
+           L 320 782
+           C 320 812, 344 836, 374 836
+           C 404 836, 428 812, 428 782
+           L 428 718
+           C 428 646, 462 606, 512 606
+           C 562 606, 596 646, 596 718
+           L 596 782
+           C 596 812, 620 836, 650 836
+           C 680 836, 704 812, 704 782
+           L 704 706
+           C 704 590, 644 486, 512 486 Z"
+        fill="#ffffff"/>
+</svg>

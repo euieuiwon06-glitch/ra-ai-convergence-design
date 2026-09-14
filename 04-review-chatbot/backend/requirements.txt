@@ -1,0 +1,12 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+httpx>=0.27
+pytest>=8.0
+python-dotenv>=1.0
+
+# 3-LLM 교차검증 레이블링(data/labeling/majority_vote.py)에서 사용.
+# API 키가 없는 환경(테스트/CI)에서는 지연 임포트되므로 설치하지 않아도 나머지 기능은 동작한다.
+openai>=1.30
+anthropic>=0.30
+google-generativeai>=0.7

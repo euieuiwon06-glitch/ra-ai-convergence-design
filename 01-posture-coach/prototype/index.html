@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>자세 코치 — 자세 기반 UX 프로토타입</title>
+<link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Desktop-app style window -->
+  <div class="app-window">
+
+    <!-- Title bar (Windows-style chrome) -->
+    <header class="titlebar">
+      <div class="titlebar-spacer"></div>
+      <div class="titlebar-title">자세 코치 · Posture Coach</div>
+      <div class="titlebar-right">
+        <div class="titlebar-status" id="titlebarStatus">
+          <span class="status-dot" id="titlebarStatusDot"></span>
+          <span id="titlebarStatusText">대기 중</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="app-body">
+
+      <!-- Left: webcam + popup anchor -->
+      <section class="stage">
+        <div class="popup-anchor" id="popupAnchor">
+          <!-- OS-style notification popup injected here -->
+        </div>
+
+        <div class="webcam-frame">
+          <div class="webcam-container" id="webcamContainer"></div>
+          <canvas id="poseCanvas"></canvas>
+
+          <div class="badge-pill class-badge" id="classBadge">
+            <span class="class-badge-dot" id="classBadgeDot"></span>
+            <span id="classBadgeText">대기 중</span>
+          </div>
+
+          <div class="webcam-empty" id="webcamEmpty">
+            <div class="webcam-empty-icon">◐</div>
+            <p>웹캠을 아직 시작하지 않았어요</p>
+          </div>
+        </div>
+
+        <p class="footnote">
+          * 본 프로토타입은 시연 속도를 고려해 자세 확정 5초 · 팝업 10초 · 경고음 20초 기준으로 축소 적용되었습니다.
+          실제 배포 버전 기준은 5분입니다.
+        </p>
+      </section>
+
+      <!-- Right: sidebar -->
+      <aside class="sidebar">
+
+        <div class="feature-card">
+          <h3 class="card-title">세션 제어</h3>
+          <div class="button-row">
+            <button class="button-primary" id="btnStart">웹캠 시작</button>
+            <button class="button-utility" id="btnEnd" disabled>세션 종료</button>
+          </div>
+          <p class="hint-text" id="stageHint">웹캠을 시작하면 캘리브레이션이 진행됩니다.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="card-title">클래스 신뢰도</h3>
+          <ul class="confidence-list" id="confidenceList">
+            <li class="confidence-row" data-class="Normal">
+              <span class="confidence-label"><span class="dot-swatch swatch-normal"></span>Normal</span>
+              <div class="confidence-track"><div class="confidence-fill fill-normal" style="width:0%"></div></div>
+              <span class="confidence-pct">0%</span>
+            </li>
+            <li class="confidence-row" data-class="Slouch">
+              <span class="confidence-label"><span class="dot-swatch swatch-slouch"></span>Slouch</span>
+              <div class="confidence-track"><div class="confidence-fill fill-slouch" style="width:0%"></div></div>
+              <span class="confidence-pct">0%</span>
+            </li>
+            <li class="confidence-row" data-class="Lean">
+              <span class="confidence-label"><span class="dot-swatch swatch-lean"></span>Lean</span>
+              <div class="confidence-track"><div class="confidence-fill fill-lean" style="width:0%"></div></div>
+              <span class="confidence-pct">0%</span>
+            </li>
+            <li class="confidence-row" data-class="Chin">
+              <span class="confidence-label"><span class="dot-swatch swatch-chin"></span>Chin</span>
+              <div class="confidence-track"><div class="confidence-fill fill-chin" style="width:0%"></div></div>
+              <span class="confidence-pct">0%</span>
+            </li>
+            <li class="confidence-row" data-class="Away">
+              <span class="confidence-label"><span class="dot-swatch swatch-away"></span>Away</span>
+              <div class="confidence-track"><div class="confidence-fill fill-away" style="width:0%"></div></div>
+              <span class="confidence-pct">0%</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="card-title">지속 시간 상태</h3>
+          <div class="timeline-steps" id="timelineSteps">
+            <div class="timeline-step" data-step="smooth">
+              <span class="step-index">1</span>
+              <span class="step-label">스무딩 판정</span>
+              <span class="step-value">5초</span>
+            </div>
+            <div class="timeline-step" data-step="popup">
+              <span class="step-index">2</span>
+              <span class="step-label">팝업 발생</span>
+              <span class="step-value">10초</span>
+            </div>
+            <div class="timeline-step" data-step="alarm">
+              <span class="step-index">3</span>
+              <span class="step-label">경고음 추가</span>
+              <span class="step-value">20초</span>
+            </div>
+          </div>
+          <div class="streak-meter">
+            <div class="streak-meter-fill" id="streakMeterFill"></div>
+          </div>
+          <p class="hint-text" id="streakHint">감지 대기 중</p>
+        </div>
+
+      </aside>
+    </main>
+  </div>
+
+  <p class="page-caption">자세 기반 UX 분석 및 UI 디자인 · AI 융합디자인 B트랙 · Teachable Machine Pose 프로토타입</p>
+</div>
+
+<!-- Calibration overlay -->
+<div class="modal-overlay" id="calibrationOverlay" hidden>
+  <div class="modal-card ex-modal-card">
+    <div class="badge-pill eyebrow-badge">캘리브레이션</div>
+    <h2 class="modal-title">바른 자세로 앉아주세요</h2>
+    <p class="modal-body">카메라 정면을 바라보고 평소 학습할 때의 바른 자세를 취해주세요. 잠시 후 자동으로 시작됩니다.</p>
+    <div class="calibration-ring">
+      <span id="calibrationCount">3</span>
+    </div>
+  </div>
+</div>
+
+<!-- Summary report modal -->
+<div class="modal-overlay" id="reportOverlay" hidden>
+  <div class="modal-card ex-modal-card report-card">
+    <div class="badge-pill eyebrow-badge">세션 요약 리포트</div>
+    <h2 class="modal-title">오늘 학습, 자세는 어땠을까요?</h2>
+
+    <div class="report-hero">
+      <span class="report-hero-number" id="reportUprightPct">0%</span>
+      <span class="report-hero-label">바른 자세 유지율</span>
+    </div>
+
+    <div class="report-breakdown" id="reportBreakdown"></div>
+
+    <p class="hint-text" id="reportDuration">총 세션 시간: 0초</p>
+
+    <div class="button-row">
+      <button class="button-secondary" id="btnCloseReport">닫기</button>
+      <button class="button-primary" id="btnRestart">다시 시작</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>

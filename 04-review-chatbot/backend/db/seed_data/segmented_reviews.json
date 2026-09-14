@@ -1,0 +1,668 @@
+[
+  {
+    "review_id": 1,
+    "original_text": "화장실이 좀 아쉽긴 한데ㅠ",
+    "segments": [
+      { "segment_no": 1, "text": "화장실이 좀 아쉽긴 한데ㅠ", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 2,
+    "original_text": "좌석들이 많고 멋져서 좋아요",
+    "segments": [
+      { "segment_no": 1, "text": "좌석들이 많아요", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "멋져서 좋아요", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 3,
+    "original_text": "사장같은 사람이 와서 개념없이 떠들고 다닌다",
+    "segments": [
+      { "segment_no": 1, "text": "사장같은 사람이 와서 개념없이 떠들고 다닌다", "category": "소음", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 4,
+    "original_text": "방음도 잘 안된다",
+    "segments": [
+      { "segment_no": 1, "text": "방음도 잘 안된다", "category": "소음", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 5,
+    "original_text": "옆 방에 사람이 다 보인다",
+    "segments": [
+      { "segment_no": 1, "text": "옆 방에 사람이 다 보인다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 6,
+    "original_text": "방이 너무 춥다",
+    "segments": [
+      { "segment_no": 1, "text": "방이 너무 춥다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 7,
+    "original_text": "잔잔한 음악소리가 최대 장점이다",
+    "segments": [
+      { "segment_no": 1, "text": "잔잔한 음악소리가 최대 장점이다", "category": "소음", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 8,
+    "original_text": "넓은 좌석 공간이 최대 장점이다",
+    "segments": [
+      { "segment_no": 1, "text": "넓은 좌석 공간이 최대 장점이다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 9,
+    "original_text": "자리 배치가 개방적이어서 더 집중이 잘되는 느낌이다",
+    "segments": [
+      { "segment_no": 1, "text": "자리 배치가 개방적이다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "더 집중이 잘되는 느낌이다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 10,
+    "original_text": "자리 종류가 많아서 집중 안될 때마다 돌아가면서 하면 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "자리 종류가 많다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "집중 안될 때마다 돌아가면서 앉으면 좋다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 11,
+    "original_text": "우드톤 인테리어 분위기가 좋으니까 공부가 더 잘된다",
+    "segments": [
+      { "segment_no": 1, "text": "우드톤 인테리어 분위기가 좋다", "category": "몰입환경", "tone": "긍정" },
+      { "segment_no": 2, "text": "공부가 더 잘된다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 12,
+    "original_text": "매장 내부가 되게 깔끔하고 좋은 냄새나서 계속 앉아있고 싶다",
+    "segments": [
+      { "segment_no": 1, "text": "매장 내부가 되게 깔끔하다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "좋은 냄새가 난다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 3, "text": "계속 앉아있고 싶다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 13,
+    "original_text": "자리마다 콘센트가 넉넉하게 4개씩 있다",
+    "segments": [
+      { "segment_no": 1, "text": "자리마다 콘센트가 넉넉하게 4개씩 있다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 14,
+    "original_text": "여전히 분위기가 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "여전히 분위기가 좋다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 15,
+    "original_text": "충전기랑 전등 맘놓고 쓸 수 있다",
+    "segments": [
+      { "segment_no": 1, "text": "충전기랑 전등 맘놓고 쓸 수 있다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 16,
+    "original_text": "간식도 구비되어있어서 멀리 안나가도 된다",
+    "segments": [
+      { "segment_no": 1, "text": "간식도 구비되어있어서 멀리 안나가도 된다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 17,
+    "original_text": "지하임에도 쾌적하고 답답한 느낌이 없다",
+    "segments": [
+      { "segment_no": 1, "text": "지하임에도 쾌적하고 답답한 느낌이 없다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 18,
+    "original_text": "자리가 다양해서 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "자리가 다양해서 좋다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 19,
+    "original_text": "대화가 가능해서 압박감이 들지 않는다",
+    "segments": [
+      { "segment_no": 1, "text": "대화가 가능하다", "category": "소음", "tone": "긍정" },
+      { "segment_no": 2, "text": "압박감이 들지 않는다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 20,
+    "original_text": "깔끔하고 분위기도 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "깔끔하다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "분위기도 좋다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 21,
+    "original_text": "콘센트가 여기저기 많이 비치되어 있다",
+    "segments": [
+      { "segment_no": 1, "text": "콘센트가 여기저기 많이 비치되어 있다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 22,
+    "original_text": "좌석 간 간격이 넉넉해서 너무 갑갑하지 않다",
+    "segments": [
+      { "segment_no": 1, "text": "좌석 간 간격이 넉넉하다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "너무 갑갑하지 않다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 23,
+    "original_text": "불빛도 너무 밝지 않고 적당히 은은하다",
+    "segments": [
+      { "segment_no": 1, "text": "불빛도 너무 밝지 않고 적당히 은은하다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 24,
+    "original_text": "스카에서는 노트북 사용하기 눈치보이는데 여기선 맘놓고 쓴다",
+    "segments": [
+      { "segment_no": 1, "text": "스카에서는 노트북 사용하기 눈치보이는데 여기선 맘놓고 쓴다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 25,
+    "original_text": "집중이 잘 된다",
+    "segments": [
+      { "segment_no": 1, "text": "집중이 잘 된다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 26,
+    "original_text": "좌석이 편하다",
+    "segments": [
+      { "segment_no": 1, "text": "좌석이 편하다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 27,
+    "original_text": "방해되지 않을 정도의 음악에 조용히 대화하기도 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "방해되지 않을 정도의 음악에 조용히 대화하기도 좋다", "category": "소음", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 28,
+    "original_text": "작업하기 최적화된 곳이다",
+    "segments": [
+      { "segment_no": 1, "text": "작업하기 최적화된 곳이다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 29,
+    "original_text": "시설이 엄청 깔끔하다",
+    "segments": [
+      { "segment_no": 1, "text": "시설이 엄청 깔끔하다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 30,
+    "original_text": "집중하기 좋은 분위기다",
+    "segments": [
+      { "segment_no": 1, "text": "집중하기 좋은 분위기다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 31,
+    "original_text": "잔잔한 음악이 나오는 곳이라 공부하기 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "잔잔한 음악이 나오는 곳이라 공부하기 좋다", "category": "소음", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 32,
+    "original_text": "매장이 청결하다",
+    "segments": [
+      { "segment_no": 1, "text": "매장이 청결하다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 33,
+    "original_text": "매장이 너무 깨끗하다",
+    "segments": [
+      { "segment_no": 1, "text": "매장이 너무 깨끗하다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 34,
+    "original_text": "소음이 적당해서 공부 집중이 잘된다",
+    "segments": [
+      { "segment_no": 1, "text": "소음이 적당하다", "category": "소음", "tone": "긍정" },
+      { "segment_no": 2, "text": "공부 집중이 잘된다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 35,
+    "original_text": "조용해서 공부에 집중할 수 있다",
+    "segments": [
+      { "segment_no": 1, "text": "조용하다", "category": "소음", "tone": "긍정" },
+      { "segment_no": 2, "text": "공부에 집중할 수 있다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 36,
+    "original_text": "자리에 조명도 괜찮고 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "자리에 조명도 괜찮고 좋다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 37,
+    "original_text": "지하에 위치해있어서 집중하기 더 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "지하에 위치해있어서 집중하기 더 좋다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 38,
+    "original_text": "노래가 깔려있어서 적당히 차분하고 집중하기 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "노래가 깔려있어서 적당히 차분하다", "category": "소음", "tone": "긍정" },
+      { "segment_no": 2, "text": "집중하기 좋다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 39,
+    "original_text": "시험기간이 아니라 사람도 적은 편이어서 편하게 이용했다",
+    "segments": [
+      { "segment_no": 1, "text": "시험기간이 아니라 사람도 적은 편이어서 편하게 이용했다", "category": "혼잡도", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 40,
+    "original_text": "시설이 넓고 쾌적하다",
+    "segments": [
+      { "segment_no": 1, "text": "시설이 넓다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "쾌적하다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 41,
+    "original_text": "탁 트인 인테리어와 편한 의자가 맘에 들었다",
+    "segments": [
+      { "segment_no": 1, "text": "탁 트인 인테리어와 편한 의자가 맘에 들었다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 42,
+    "original_text": "조명이 눈이 안 아프고 집중이 잘된다",
+    "segments": [
+      { "segment_no": 1, "text": "조명이 눈이 안 아프다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "집중이 잘된다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 43,
+    "original_text": "시설이 깔끔하고 집중이 잘 된다",
+    "segments": [
+      { "segment_no": 1, "text": "시설이 깔끔하다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "집중이 잘 된다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 44,
+    "original_text": "마커가 다 잘 안 나온다",
+    "segments": [
+      { "segment_no": 1, "text": "마커가 다 잘 안 나온다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 45,
+    "original_text": "시설이 엄청 깔끔하고 화이트 톤이라 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "시설이 엄청 깔끔하다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "화이트 톤이라 좋다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 46,
+    "original_text": "공간이 엄청 넓고 자리도 매번 원하는 곳으로 선택할 수 있다",
+    "segments": [
+      { "segment_no": 1, "text": "공간이 엄청 넓다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "자리도 매번 원하는 곳으로 선택할 수 있다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 47,
+    "original_text": "늘 깨끗하게 관리가 잘 되어있다",
+    "segments": [
+      { "segment_no": 1, "text": "늘 깨끗하게 관리가 잘 되어있다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 48,
+    "original_text": "분위기가 잘 잡혀있다",
+    "segments": [
+      { "segment_no": 1, "text": "분위기가 잘 잡혀있다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 49,
+    "original_text": "시설도 깔끔하고 청결하다",
+    "segments": [
+      { "segment_no": 1, "text": "시설도 깔끔하고 청결하다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 50,
+    "original_text": "휴게실에서 크게 떠들지 못하도록 관리한다",
+    "segments": [
+      { "segment_no": 1, "text": "휴게실에서 크게 떠들지 못하도록 관리한다", "category": "소음", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 51,
+    "original_text": "관리가 꼼꼼해서 공부에만 집중할 수 있는 환경이다",
+    "segments": [
+      { "segment_no": 1, "text": "관리가 꼼꼼하다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "공부에만 집중할 수 있는 환경이다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 52,
+    "original_text": "소음 관리가 잘 되어 있어서 장시간 공부하기 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "소음 관리가 잘 되어 있어서 장시간 공부하기 좋다", "category": "소음", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 53,
+    "original_text": "휴게실에 커피머신이 있다",
+    "segments": [
+      { "segment_no": 1, "text": "휴게실에 커피머신이 있다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 54,
+    "original_text": "분위기가 조용하다",
+    "segments": [
+      { "segment_no": 1, "text": "분위기가 조용하다", "category": "소음", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 55,
+    "original_text": "자리가 넘 편하다",
+    "segments": [
+      { "segment_no": 1, "text": "자리가 넘 편하다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 56,
+    "original_text": "밥먹는 공간이 따로 있어서 냄새도 안나고 쾌적하다",
+    "segments": [
+      { "segment_no": 1, "text": "밥먹는 공간이 따로 있다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 2, "text": "냄새도 안 난다", "category": "시설", "tone": "긍정" },
+      { "segment_no": 3, "text": "쾌적하다", "category": "몰입환경", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 57,
+    "original_text": "각 좌석마다 스탠드가 있다",
+    "segments": [
+      { "segment_no": 1, "text": "각 좌석마다 스탠드가 있다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 58,
+    "original_text": "잔잔한 음악이 나와서 조용한 분위기다",
+    "segments": [
+      { "segment_no": 1, "text": "잔잔한 음악이 나와서 조용한 분위기다", "category": "소음", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 59,
+    "original_text": "휴게실 있는 점이 좋았다",
+    "segments": [
+      { "segment_no": 1, "text": "휴게실 있는 점이 좋았다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 60,
+    "original_text": "백색소음이 전체적으로 너무 크다",
+    "segments": [
+      { "segment_no": 1, "text": "백색소음이 전체적으로 너무 크다", "category": "소음", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 61,
+    "original_text": "헤드폰 소리를 더 키워야 해서 귀가 아프다",
+    "segments": [
+      { "segment_no": 1, "text": "헤드폰 소리를 더 키워야 해서 귀가 아프다", "category": "소음", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 62,
+    "original_text": "청소가 잘 되어있다",
+    "segments": [
+      { "segment_no": 1, "text": "청소가 잘 되어있다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 63,
+    "original_text": "2층은 조용하다",
+    "segments": [
+      { "segment_no": 1, "text": "2층은 조용하다", "category": "소음", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 64,
+    "original_text": "2층은 자리가 부족하다",
+    "segments": [
+      { "segment_no": 1, "text": "2층은 자리가 부족하다", "category": "혼잡도", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 65,
+    "original_text": "4층은 고딩이 많아서 우루루 왔다갔다 움직여서 시끄럽다",
+    "segments": [
+      { "segment_no": 1, "text": "4층은 고등학생이 많다", "category": "혼잡도", "tone": "부정" },
+      { "segment_no": 2, "text": "우루루 왔다갔다 움직여서 시끄럽다", "category": "소음", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 66,
+    "original_text": "지우개가루를 안치우고 간다",
+    "segments": [
+      { "segment_no": 1, "text": "지우개가루를 안치우고 간다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 67,
+    "original_text": "에어컨에서 간간히 잡음소리가 들리고 냉난방 이슈가 있다",
+    "segments": [
+      { "segment_no": 1, "text": "에어컨에서 간간히 잡음소리가 들린다", "category": "소음", "tone": "부정" },
+      { "segment_no": 2, "text": "냉난방 이슈가 있다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 68,
+    "original_text": "공간이 다른 곳에 비해 조금 협소하다",
+    "segments": [
+      { "segment_no": 1, "text": "공간이 다른 곳에 비해 조금 협소하다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 69,
+    "original_text": "공부 분위기가 2층 4층 할것없이 안좋다",
+    "segments": [
+      { "segment_no": 1, "text": "공부 분위기가 2층 4층 할것없이 안좋다", "category": "몰입환경", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 70,
+    "original_text": "사물함 크기가 작아서 책을 조금만 넣어도 바로 찬다",
+    "segments": [
+      { "segment_no": 1, "text": "사물함 크기가 작아서 책을 조금만 넣어도 바로 찬다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 71,
+    "original_text": "화장실 하나는 일품이다",
+    "segments": [
+      { "segment_no": 1, "text": "화장실 하나는 일품이다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 72,
+    "original_text": "도로 근처라 시끄럽다",
+    "segments": [
+      { "segment_no": 1, "text": "도로 근처라 시끄럽다", "category": "소음", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 73,
+    "original_text": "편의 시설이 없다",
+    "segments": [
+      { "segment_no": 1, "text": "편의 시설이 없다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 74,
+    "original_text": "정수기가 없다",
+    "segments": [
+      { "segment_no": 1, "text": "정수기가 없다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 75,
+    "original_text": "깨끗한데 편의시설은 없다",
+    "segments": [
+      { "segment_no": 1, "text": "깨끗한데 편의시설은 없다", "category": "시설", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 76,
+    "original_text": "시설은 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "시설은 좋다", "category": "시설", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 77,
+    "original_text": "도로변 바로 앞에 있어서 매우 시끄럽다",
+    "segments": [
+      { "segment_no": 1, "text": "도로변 바로 앞에 있어서 매우 시끄럽다", "category": "소음", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 78,
+    "original_text": "시험기간엔 자리 잡기가 거의 불가능하다",
+    "segments": [
+      { "segment_no": 1, "text": "시험기간엔 자리 잡기가 거의 불가능하다", "category": "혼잡도", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 79,
+    "original_text": "평일 낮에는 사람이 별로 없어서 여유롭다",
+    "segments": [
+      { "segment_no": 1, "text": "평일 낮에는 사람이 별로 없어서 여유롭다", "category": "혼잡도", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 80,
+    "original_text": "저녁 시간대만 되면 자리가 꽉 찬다",
+    "segments": [
+      { "segment_no": 1, "text": "저녁 시간대만 되면 자리가 꽉 찬다", "category": "혼잡도", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 81,
+    "original_text": "주말엔 한산해서 원하는 자리에 앉을 수 있다",
+    "segments": [
+      { "segment_no": 1, "text": "주말엔 한산해서 원하는 자리에 앉을 수 있다", "category": "혼잡도", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 82,
+    "original_text": "시험기간엔 예약 안하면 못 들어갈 정도다",
+    "segments": [
+      { "segment_no": 1, "text": "시험기간엔 예약 안하면 못 들어갈 정도다", "category": "혼잡도", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 83,
+    "original_text": "새벽 시간엔 사람이 거의 없어서 조용히 이용했다",
+    "segments": [
+      { "segment_no": 1, "text": "새벽 시간엔 사람이 거의 없어서 조용히 이용했다", "category": "혼잡도", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 84,
+    "original_text": "방학 때는 확실히 사람이 몰린다",
+    "segments": [
+      { "segment_no": 1, "text": "방학 때는 확실히 사람이 몰린다", "category": "혼잡도", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 85,
+    "original_text": "평소엔 자리 걱정 없이 편하게 다닌다",
+    "segments": [
+      { "segment_no": 1, "text": "평소엔 자리 걱정 없이 편하게 다닌다", "category": "혼잡도", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 86,
+    "original_text": "오후 6시 넘으면 대기줄까지 생긴다",
+    "segments": [
+      { "segment_no": 1, "text": "오후 6시 넘으면 대기줄까지 생긴다", "category": "혼잡도", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 87,
+    "original_text": "평일 오전엔 자리가 널널하다",
+    "segments": [
+      { "segment_no": 1, "text": "평일 오전엔 자리가 널널하다", "category": "혼잡도", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 88,
+    "original_text": "피크타임엔 원하는 자리는 거의 못 앉는다",
+    "segments": [
+      { "segment_no": 1, "text": "피크타임엔 원하는 자리는 거의 못 앉는다", "category": "혼잡도", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 89,
+    "original_text": "비수기라 그런지 사람이 적어서 좋았다",
+    "segments": [
+      { "segment_no": 1, "text": "비수기라 그런지 사람이 적어서 좋았다", "category": "혼잡도", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 90,
+    "original_text": "시험기간 피해서 가면 자리 여유 있다",
+    "segments": [
+      { "segment_no": 1, "text": "시험기간 피해서 가면 자리 여유 있다", "category": "혼잡도", "tone": "긍정" }
+    ]
+  },
+  {
+    "review_id": 91,
+    "original_text": "주말 오후엔 발디딜 틈이 없을 정도다",
+    "segments": [
+      { "segment_no": 1, "text": "주말 오후엔 발디딜 틈이 없을 정도다", "category": "혼잡도", "tone": "부정" }
+    ]
+  },
+  {
+    "review_id": 92,
+    "original_text": "공강 시간대에 가면 사람이 적어서 좋다",
+    "segments": [
+      { "segment_no": 1, "text": "공강 시간대에 가면 사람이 적어서 좋다", "category": "혼잡도", "tone": "긍정" }
+    ]
+  }
+]

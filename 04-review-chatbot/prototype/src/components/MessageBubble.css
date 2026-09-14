@@ -1,0 +1,266 @@
+.message-row {
+  display: flex;
+  width: 100%;
+}
+
+.message-row--user {
+  justify-content: flex-end;
+}
+
+.message-row--ai {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.bubble {
+  max-width: 280px;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bubble--user {
+  background: var(--color-mint);
+  padding: 12px 14px;
+  max-width: 260px;
+}
+
+.bubble--user .bubble__text {
+  color: var(--color-mint-text);
+  font-weight: 500;
+}
+
+.bubble--ai {
+  background: var(--color-card);
+}
+
+.bubble__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  white-space: pre-wrap;
+}
+
+.bubble__example {
+  margin: 0;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.badge {
+  align-self: flex-start;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.badge--confident {
+  background: var(--color-card-pos);
+  color: var(--color-mint);
+}
+
+.badge--warn {
+  background: var(--color-card-neg);
+  color: var(--color-orange);
+}
+
+.ratio-labels {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.ratio-labels__pos {
+  color: var(--color-mint);
+}
+
+.ratio-labels__neg {
+  color: var(--color-orange);
+}
+
+.ratio-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: var(--color-orange);
+  overflow: hidden;
+}
+
+.ratio-bar__pos {
+  height: 100%;
+  background: var(--color-mint);
+  border-radius: 4px;
+}
+
+.expand-btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: #17171c;
+  color: var(--color-mint);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 9px 12px;
+  border-radius: 10px;
+}
+
+.evidence {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.evidence__label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.evidence__quote {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.naver-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.naver-links__caption {
+  margin: 0;
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.pill-chip-light {
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+  background: #edf2ed;
+  color: #17171c;
+  font-weight: 500;
+  font-size: 11px;
+  padding: 8px 14px;
+  border-radius: 14px;
+}
+
+.bubble--summary {
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 300px;
+  max-width: 100%;
+}
+
+.bubble__text--muted {
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+.review-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-group__label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.review-group__label--pos {
+  color: var(--color-mint);
+}
+
+.review-group__label--neg {
+  color: var(--color-orange);
+}
+
+.review-group__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-card {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.review-card--pos {
+  background: var(--color-card-pos);
+}
+
+.review-card--neg {
+  background: var(--color-card-neg);
+}
+
+.review-card__col {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.review-card__text {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-text-primary);
+}
+
+.review-card__meta {
+  margin: 0;
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.bubble--typing {
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  width: 69px;
+  height: 39px;
+  justify-content: center;
+}
+
+.typing-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-text-secondary);
+  animation: typing-bounce 1.2s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes typing-bounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
